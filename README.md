@@ -1,3 +1,5 @@
-@author: armin y. amin /n
-techniken: next.js, php, html .../n
+@author: armin y. amin
+
+techniken: next.js, php, html 
+
 programme: dieses und jenes
