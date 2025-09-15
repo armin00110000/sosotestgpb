@@ -40,16 +40,16 @@ export default function Home() {
           {/* Bilder von Berlin mit 3D-Rahmen */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mt-6">
             <div className="relative">
-              <Image src="/berlin/brandenburger.jpg" alt="Brandenburger Tor" width={300} height={200} className="rounded-lg shadow-[8px_8px_0px_rgba(255,0,0,0.6)]" />
+              <Image src="/img/brandenburger.jpg" alt="Brandenburger Tor" width={300} height={200} className="rounded-lg shadow-[8px_8px_0px_rgba(255,0,0,0.6)]" />
               <p className="absolute bottom-4 left-4 text-white text-lg font-bold bg-black/50 p-2 rounded">Brandenburger Tor</p>
             </div>
             <div className="relative">
-              <Image src="/berlin/berliner-dom.jpg" alt="Berliner Dom" width={300} height={200} className="rounded-lg shadow-[8px_8px_0px_rgba(255,0,0,0.6)]" />
-              <p className="absolute bottom-4 left-4 text-white text-lg font-bold bg-black/50 p-2 rounded">Berliner Dom</p>
+              <Image src="/img/techpark_berlin.jpeg" alt="Adlershof Technikpark" width={300} height={200} className="rounded-lg shadow-[8px_8px_0px_rgba(255,0,0,0.6)]" />
+              <p className="absolute bottom-4 left-4 text-white text-lg font-bold bg-black/50 p-2 rounded">Adlershof Technikpark</p>
             </div>
             <div className="relative">
-              <Image src="/berlin/fernsehturm.jpg" alt="Fernsehturm" width={300} height={200} className="rounded-lg shadow-[8px_8px_0px_rgba(255,0,0,0.6)]" />
-              <p className="absolute bottom-4 left-4 text-white text-lg font-bold bg-black/50 p-2 rounded">Fernsehturm</p>
+              <Image src="/img/weltzeituhr.jpg" alt="alexander platz" width={300} height={200} className="rounded-lg shadow-[8px_8px_0px_rgba(255,0,0,0.6)]" />
+              <p className="absolute bottom-4 left-4 text-white text-lg font-bold bg-black/50 p-2 rounded">Weltzeituhr & Fernsehturm</p>
             </div>
           </div>
         </main>
