@@ -27,7 +27,7 @@ export default function Home() {
 
       <div className="flex-1 flex flex-col items-center p-8">
         <main className="flex flex-col gap-10 items-center w-full max-w-4xl">
-          <h1 className="text-6xl font-extrabold text-red-500 tracking-tight">Berlin: Die Hauptstadt</h1>
+          <h1 className="text-6xl font-extrabold text-red-500 tracking-tight">Berlin: Die Stadt</h1>
 
           {/* Text über Berlin */}
           <section className="bg-gray-800 p-8 rounded-xl shadow-lg border border-green-500">
@@ -38,20 +38,20 @@ export default function Home() {
           </section>
 
           {/* Bilder von Berlin mit 3D-Rahmen */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mt-6">
-            <div className="relative">
-              <Image src="/img/brandenburger.jpg" alt="Brandenburger Tor" width={300} height={200} className="rounded-lg shadow-[8px_8px_0px_rgba(255,0,0,0.6)]" />
-              <p className="absolute bottom-4 left-4 text-white text-lg font-bold bg-black/50 p-2 rounded">Brandenburger Tor</p>
-            </div>
-            <div className="relative">
-              <Image src="/img/techpark_berlin.jpeg" alt="Adlershof Technikpark" width={300} height={200} className="rounded-lg shadow-[8px_8px_0px_rgba(255,0,0,0.6)]" />
-              <p className="absolute bottom-4 left-4 text-white text-lg font-bold bg-black/50 p-2 rounded">Adlershof Technikpark</p>
-            </div>
-            <div className="relative">
-              <Image src="/img/weltzeituhr.jpg" alt="alexander platz" width={300} height={200} className="rounded-lg shadow-[8px_8px_0px_rgba(255,0,0,0.6)]" />
-              <p className="absolute bottom-4 left-4 text-white text-lg font-bold bg-black/50 p-2 rounded">Weltzeituhr & Fernsehturm</p>
-            </div>
-          </div>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mt-6">
+  <div className="flex flex-col items-center">
+    <Image src="/img/brandenburger.jpg" alt="Brandenburger Tor" width={300} height={200} className="rounded-lg shadow-[8px_8px_0px_rgba(255,0,0,0.6)]" />
+    <p className="mt-2 text-center text-white text-sm font-bold">Brandenburger Tor</p>
+  </div>
+  <div className="flex flex-col items-center">
+    <Image src="/img/techpark_berlin.jpeg" alt="Adlershof Technikpark" width={300} height={200} className="rounded-lg shadow-[8px_8px_0px_rgba(255,0,0,0.6)]" />
+    <p className="mt-2 text-center text-white text-sm font-bold">Adlershof Technikpark</p>
+  </div>
+  <div className="flex flex-col items-center">
+    <Image src="/img/weltzeituhr.jpg" alt="alexander platz" width={300} height={200} className="rounded-lg shadow-[8px_8px_0px_rgba(255,0,0,0.6)]" />
+    <p className="mt-2 text-center text-white text-sm font-bold">Weltzeituhr & Fernsehturm</p>
+  </div>
+</div>
         </main>
 
         <footer className="w-full max-w-4xl text-center text-sm text-gray-400 mt-auto pt-10">
