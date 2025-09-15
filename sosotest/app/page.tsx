@@ -61,7 +61,7 @@ export default function Home() {
       {/* Geänderter Hauptinhalt mit oberem Rand */}
       <div className="flex-1 flex flex-col items-center p-8 z-10 pt-24">
         <main className="flex flex-col gap-10 items-center w-full max-w-4xl bg-transparent p-8 rounded-lg shadow-xl">
-          <h1 className="text-6xl font-extrabold text-green-500 tracking-tight">Berlin: Die Hauptstadt</h1>
+          <h1 className="text-6xl font-extrabold text-green-500 tracking-tight">Berlin: Die Stadt</h1>
           
           <section className="bg-gray-800 p-8 rounded-xl shadow-lg border border-green-500">
             <h2 className="text-3xl font-bold text-green-500 mb-4">Ein Herz für Technologie</h2>

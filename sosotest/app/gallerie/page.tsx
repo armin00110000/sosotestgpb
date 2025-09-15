@@ -15,8 +15,6 @@ export default function GalleriePage() {
     { name: 'Über Berlin', href: '/ueber-berlin' },
     { name: 'IT-Stadt', href: '/it-stadt' },
     { name: 'Kultur & Nachtleben', href: '/kultur' },
-    { name: 'Impressum', href: '/impressum' },
-    { name: 'Kontakt', href: '/kontakt' },
   ];
 
   const galleryImages = [
@@ -49,7 +47,7 @@ export default function GalleriePage() {
       <div className="absolute inset-0 bg-black opacity-75 z-0"></div>
 
       {/* Navigationsleiste */}
-      <nav className="w-full bg-transparent p-6 flex justify-around items-center border-b border-green-500 z-20 fixed top-0 left-0">
+      <nav className="w-full bg-transparent p-6 flex justify-center items-center border-b border-green-500 z-20 fixed top-0 left-0">
         <h2 className="text-2xl font-bold text-green-500"></h2>
         <ul className="flex justify-center gap-6">
           {navItems.map((item) => {
