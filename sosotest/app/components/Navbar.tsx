@@ -22,7 +22,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full bg-gray-900 p-6 flex justify-between items-center border-b border-green-500 z-50 fixed top-0 left-0">
+    <nav className="w-full bg-gray-900 p-6 flex justify-center items-center border-b border-green-500 z-50 fixed top-0 left-0">
 
       {/* Hamburger-Menü für Mobilgeräte */}
       <div className="md:hidden flex items-center z-50">
