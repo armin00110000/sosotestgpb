@@ -22,9 +22,9 @@ export default function GalleriePage() {
     { src: "/img/brandenburger.jpg", alt: "Brandenburger Tor" },
     { src: "/img/techpark_berlin.jpeg", alt: "Adlershof Technikpark" },
     { src: "/img/weltzeituhr.jpg", alt: "Weltzeituhr & Fernsehturm" },
-    { src: "/img/berlin-spree.jpg", alt: "Berliner Spree" },
-    { src: "/img/berlin-reichstag.jpg", alt: "Reichstagsgebäude in Berlin" },
-    { src: "/img/eastside-gallery.jpg", alt: "East Side Gallery" },
+    { src: "/img/spree_berliner_dom.jpg", alt: "Spree & Berliner Dom" },
+    { src: "/img/reichstag.jpg", alt: "Reichstagsgebäude in Berlin" },
+    { src: "/img/eastside.jpg", alt: "East Side Gallery" },
     // Füge hier weitere Bilder hinzu
   ];
 
