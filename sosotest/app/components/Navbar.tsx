@@ -22,8 +22,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full bg-transparent p-6 flex justify-between items-center border-b border-green-500 z-50 fixed top-0 left-0">
-      <h2 className="text-2xl font-bold text-green-500 z-50">Berlin</h2>
+    <nav className="w-full bg-gray-900 p-6 flex justify-between items-center border-b border-green-500 z-50 fixed top-0 left-0">
 
       {/* Hamburger-Menü für Mobilgeräte */}
       <div className="md:hidden flex items-center z-50">
