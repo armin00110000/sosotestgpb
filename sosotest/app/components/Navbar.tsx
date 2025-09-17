@@ -4,6 +4,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from 'react';
+import Image from "next/image";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -22,12 +23,17 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full bg-gray-900 p-6 flex justify-center items-center border-b border-green-500 z-50 fixed top-0 left-0">
+    <nav className="w-full bg-gray-900 p-6 flex justify-center items-center border-b border-teal-500 z-50 fixed top-0 left-0">
 
 {/* Logo auf der linken Seite */}
-  <div className="absolute left-6">
-    
-    
+  <div className="absolute top-0 left-6">
+<Image
+            src="/img/logo_t.png"
+            alt="Logo"
+            width={160} 
+            height={160} 
+            className="rounded-full"
+          />    
   </div>
 
       {/* Hamburger-Menü für Mobilgeräte */}
