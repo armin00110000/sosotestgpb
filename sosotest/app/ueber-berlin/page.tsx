@@ -1,21 +1,10 @@
 // client-side-Komponente für den Navigations-hook
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import Navbar from "../components/Navbar";
 
 export default function AboutBerlinPage() {
-  const pathname = usePathname();
 
-  const navItems = [
-    { name: 'Haupt', href: '/' },
-    { name: 'Gallerie', href: '/gallerie' },
-    { name: 'Über Berlin', href: '/ueber-berlin' },
-    { name: 'IT-Stadt', href: '/it-stadt' },
-    { name: 'Kultur & Nachtleben', href: '/kultur' },
-  ];
 
   return (
     <div
@@ -29,10 +18,10 @@ export default function AboutBerlinPage() {
 <Navbar/>
       <div className="flex-1 flex flex-col items-center p-8 z-10 pt-24">
         <main className="flex flex-col gap-10 items-center w-full max-w-4xl bg-transparent p-8 rounded-lg shadow-xl">
-          <h1 className="text-6xl font-extrabold text-green-500 tracking-tight">Über Berlin</h1>
+          <h1 className="text-6xl font-extrabold text-teal-500 tracking-tight">Über Berlin</h1>
 
-          <section className="bg-gray-800 p-8 rounded-xl shadow-lg border border-green-500">
-            <h2 className="text-3xl font-bold text-green-500 mb-4">Eine kurze Geschichte</h2>
+          <section className="bg-gray-800 p-8 rounded-xl shadow-lg border border-teal-500">
+            <h2 className="text-3xl font-bold text-teal-500 mb-4">Eine kurze Geschichte</h2>
             <p className="text-lg leading-relaxed text-gray-300 text-justify">
               Berlin, das historische Herz Deutschlands, entstand aus zwei mittelalterlichen Siedlungen, Cölln und Berlin, und entwickelte sich im Laufe der Jahrhunderte zur Hauptstadt Preußens und des Deutschen Kaiserreichs. Nach dem Ersten Weltkrieg wurde es das Zentrum der pulsierenden Weimarer Republik, bekannt für seine Kunst, Wissenschaft und sein Nachtleben.
               <br/><br/>

@@ -1,21 +1,9 @@
 // client-side-Komponente für den Navigations-hook
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import Navbar from "../components/Navbar";
 
 export default function ImpressumPage() {
-  const pathname = usePathname();
-
-  const navItems = [
-    { name: 'Haupt', href: '/' },
-    { name: 'Gallerie', href: '/gallerie' },
-    { name: 'Über Berlin', href: '/ueber-berlin' },
-    { name: 'IT-Stadt', href: '/it-stadt' },
-    { name: 'Kultur & Nachtleben', href: '/kultur' },
-    { name: 'Impressum', href: '/impressum' },
-  ];
 
   return (
     <div
@@ -29,10 +17,10 @@ export default function ImpressumPage() {
 <Navbar/>
       <div className="flex-1 flex flex-col items-center p-8 z-10 pt-24">
         <main className="flex flex-col gap-10 items-center w-full max-w-4xl bg-transparent p-8 rounded-lg shadow-xl">
-          <h1 className="text-6xl font-extrabold text-green-500 tracking-tight">Impressum</h1>
+          <h1 className="text-6xl font-extrabold text-teal-500 tracking-tight">Impressum</h1>
 
-          <section className="bg-gray-800 p-8 rounded-xl shadow-lg border border-green-500 w-full text-justify">
-            <h2 className="text-3xl font-bold text-green-500 mb-4">Angaben gemäß § 5 TMG</h2>
+          <section className="bg-gray-800 p-8 rounded-xl shadow-lg border border-teal-500 w-full text-justify">
+            <h2 className="text-3xl font-bold text-teal-500 mb-4">Angaben gemäß § 5 TMG</h2>
             <p className="text-lg leading-relaxed text-gray-300">
               Armin
               <br />
@@ -42,8 +30,8 @@ export default function ImpressumPage() {
             </p>
           </section>
 
-          <section className="bg-gray-800 p-8 rounded-xl shadow-lg border border-green-500 w-full text-justify">
-            <h2 className="text-3xl font-bold text-green-500 mb-4">Kontakt</h2>
+          <section className="bg-gray-800 p-8 rounded-xl shadow-lg border border-teal-500 w-full text-justify">
+            <h2 className="text-3xl font-bold text-teal-500 mb-4">Kontakt</h2>
             <p className="text-lg leading-relaxed text-gray-300">
               E-Mail: kontakt@armin.dev (fiktiv)
               <br />

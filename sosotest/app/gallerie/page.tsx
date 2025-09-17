@@ -2,21 +2,10 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useState } from "react"; // useState für die Zustandsverwaltung
 import Navbar from "../components/Navbar";
 
 export default function GalleriePage() {
-  const pathname = usePathname();
-
-  const navItems = [
-    { name: 'Haupt', href: '/' },
-    { name: 'Gallerie', href: '/gallerie' },
-    { name: 'Über Berlin', href: '/ueber-berlin' },
-    { name: 'IT-Stadt', href: '/it-stadt' },
-    { name: 'Kultur & Nachtleben', href: '/kultur' },
-  ];
 
   const galleryImages = [
     { src: "/img/brandenburger.jpg", alt: "Brandenburger Tor" },
@@ -53,23 +42,24 @@ export default function GalleriePage() {
 
       <div className="flex-1 flex flex-col items-center p-8 z-10 pt-24">
         <main className="flex flex-col gap-10 items-center w-full max-w-4xl bg-transparent p-8 rounded-lg shadow-xl">
-          <h1 className="text-6xl font-extrabold text-green-500 tracking-tight">Gallerie</h1>
+          <h1 className="text-6xl font-extrabold text-teal-500 tracking-tight">Gallerie</h1>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-6">
             {galleryImages.map((image, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center cursor-pointer transition-transform duration-300 hover:scale-105"
-                onClick={() => openModal(image)} // Klick-Handler zum Öffnen des Modals
-              >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  width={400} // Kleinere Vorschaugröße
-                  height={300}
-                  className="rounded-lg shadow-[8px_8px_0px_rgba(255,0,0,0.6)]"
-                />
-                <p className="mt-2 text-center text-white text-sm font-bold">{image.alt}</p>
+<div
+      key={index}
+      className="flex flex-col items-center cursor-pointer transition-transform duration-300 hover:scale-105"
+      onClick={() => openModal(image)}
+    >
+      <div className="relative w-full h-48 rounded-lg shadow-[8px_8px_0px_rgba(255,0,0,0.6)] overflow-hidden">
+        <Image
+          src={image.src}
+          alt={image.alt}
+          fill
+          className="object-cover"
+        />
+      </div>
+               <p className="mt-2 text-center text-white text-sm font-bold">{image.alt}</p>
               </div>
             ))}
           </div>
@@ -97,7 +87,7 @@ export default function GalleriePage() {
               alt={selectedImage.alt}
               width={1000} // Größere Bildgröße im Modal
               height={750}
-              className="rounded-lg shadow-2xl border-2 border-green-500 max-w-full max-h-[80vh] object-contain"
+              className="rounded-lg shadow-2xl border-2 border-teal-500 max-w-full max-h-[80vh] object-contain"
             />
             <p className="mt-4 text-white text-lg font-bold">{selectedImage.alt}</p>
             <button

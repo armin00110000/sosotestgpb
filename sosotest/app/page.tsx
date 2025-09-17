@@ -2,8 +2,8 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+//import Link from "next/link";
+//import { usePathname } from "next/navigation";
 // Importiere die Navbar-Komponente am Anfang jeder page.tsx Datei
 import Navbar from "./components/Navbar"; 
 export default function Home() {
@@ -21,12 +21,12 @@ export default function Home() {
       {/* Geänderter Hauptinhalt mit oberem Rand */}
       <div className="flex-1 flex flex-col items-center p-8 z-10 pt-24">
         <main className="flex flex-col gap-10 items-center w-full max-w-4xl bg-transparent p-8 rounded-lg shadow-xl">
-          <h1 className="text-6xl font-extrabold text-green-500 tracking-tight">Berlin: Die Stadt</h1>
+          <h1 className="text-6xl font-extrabold text-teal-500 tracking-tight">Berlin: Die Stadt</h1>
           
-          <section className="bg-gray-800 p-8 rounded-xl shadow-lg border border-green-500">
-            <h2 className="text-3xl font-bold text-green-500 mb-4">Ein Herz für Technologie</h2>
+          <section className="bg-gray-800 p-8 rounded-xl shadow-lg border border-teal-500">
+            <h2 className="text-3xl font-bold text-teal-500 mb-4">Ein Herz für Technologie</h2>
             <p className="text-lg leading-relaxed text-gray-300 text-justify">
-              Berlin ist nicht nur eine Stadt mit einer reichen Geschichte und pulsierender Kultur; sie hat sich auch als eine der führenden <b className="text-green-500">IT-Städte</b> Europas etabliert. Die dynamische Startup-Szene, die Vielzahl an Technologieunternehmen und die internationale Gemeinschaft von Entwicklern und Kreativen machen die Stadt zu einem Innovationszentrum. Egal, ob Sie ein Tech-Enthusiast, Künstler oder Geschichtsinteressierter sind, Berlin bietet eine einzigartige Mischung, die das Gestern mit dem Morgen verbindet.
+              Berlin ist nicht nur eine Stadt mit einer reichen Geschichte und pulsierender Kultur; sie hat sich auch als eine der führenden <b className="text-teal-500">IT-Städte</b> Europas etabliert. Die dynamische Startup-Szene, die Vielzahl an Technologieunternehmen und die internationale Gemeinschaft von Entwicklern und Kreativen machen die Stadt zu einem Innovationszentrum. Egal, ob Sie ein Tech-Enthusiast, Künstler oder Geschichtsinteressierter sind, Berlin bietet eine einzigartige Mischung, die das Gestern mit dem Morgen verbindet.
             </p>
           </section>
 

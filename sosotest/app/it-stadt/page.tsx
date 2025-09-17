@@ -2,20 +2,9 @@
 // client-side-Komponente für den Navigations-hook
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import Navbar from "../components/Navbar";
 
 export default function ItStadtPage() {
-  const pathname = usePathname();
-
-  const navItems = [
-    { name: 'Haupt', href: '/' },
-    { name: 'Gallerie', href: '/gallerie' },
-    { name: 'Über Berlin', href: '/ueber-berlin' },
-    { name: 'IT-Stadt', href: '/it-stadt' },
-    { name: 'Kultur & Nachtleben', href: '/kultur' },
-  ];
 
   return (
     <div
@@ -29,10 +18,10 @@ export default function ItStadtPage() {
 <Navbar/>
       <div className="flex-1 flex flex-col items-center p-8 z-10 pt-24">
         <main className="flex flex-col gap-10 items-center w-full max-w-4xl bg-transparent p-8 rounded-lg shadow-xl">
-          <h1 className="text-6xl font-extrabold text-green-500 tracking-tight">IT-Stadt</h1>
+          <h1 className="text-6xl font-extrabold text-teal-500 tracking-tight">IT-Stadt</h1>
 
-          <section className="bg-gray-800 p-8 rounded-xl shadow-lg border border-green-500">
-            <h2 className="text-3xl font-bold text-green-500 mb-4">Berlins digitale Transformation</h2>
+          <section className="bg-gray-800 p-8 rounded-xl shadow-lg border border-teal-500">
+            <h2 className="text-3xl font-bold text-teal-500 mb-4">Berlins digitale Transformation</h2>
             <p className="text-lg leading-relaxed text-gray-300 text-justify">
               Berlin hat sich zu einem der dynamischsten Tech-Zentren in Europa entwickelt und zieht Talente und Investitionen aus der ganzen Welt an. Die Stadt ist bekannt für ihre lebendige Start-up-Kultur und beherbergt eine Vielzahl von jungen, innovativen Unternehmen in den Bereichen Fintech, künstliche Intelligenz und E-Commerce. Die lockere Atmosphäre, die internationale Gemeinschaft und die vergleichsweise niedrigen Lebenshaltungskosten (im Vergleich zu anderen Tech-Metropolen) machen Berlin zu einem idealen Nährboden für Kreativität und Unternehmertum.
               <br/><br/>

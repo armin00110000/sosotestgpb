@@ -1,20 +1,9 @@
 // client-side-Komponente für den Navigations-hook
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import Navbar from "../components/Navbar";
 
 export default function KulturPage() {
-  const pathname = usePathname();
-
-  const navItems = [
-    { name: 'Haupt', href: '/' },
-    { name: 'Gallerie', href: '/gallerie' },
-    { name: 'Über Berlin', href: '/ueber-berlin' },
-    { name: 'IT-Stadt', href: '/it-stadt' },
-    { name: 'Kultur & Nachtleben', href: '/kultur' },
-  ];
 
   return (
     <div
@@ -28,10 +17,10 @@ export default function KulturPage() {
 <Navbar/>
       <div className="flex-1 flex flex-col items-center p-8 z-10 pt-24">
         <main className="flex flex-col gap-10 items-center w-full max-w-4xl bg-transparent p-8 rounded-lg shadow-xl">
-          <h1 className="text-6xl font-extrabold text-green-500 tracking-tight">Kultur & Nachtleben</h1>
+          <h1 className="text-6xl font-extrabold text-teal-500 tracking-tight">Kultur & Nachtleben</h1>
 
-          <section className="bg-gray-800 p-8 rounded-xl shadow-lg border border-green-500">
-            <h2 className="text-3xl font-bold text-green-500 mb-4">Ein kreatives Herz, das niemals schläft</h2>
+          <section className="bg-gray-800 p-8 rounded-xl shadow-lg border border-teal-500">
+            <h2 className="text-3xl font-bold text-teal-500 mb-4">Ein kreatives Herz, das niemals schläft</h2>
             <p className="text-lg leading-relaxed text-gray-300 text-justify">
               Berlin ist eine Stadt der Kontraste und ein Schmelztiegel für Kunst und Kultur. Von den weltberühmten Museen auf der Museumsinsel bis hin zu den urbanen Kunstwerken der East Side Gallery bietet die Stadt eine Fülle an kulturellen Erlebnissen. Theater, Opernhäuser und unzählige Galerien spiegeln die vielfältige und freie Kunstszene wider. Überall in der Stadt findet man Street Art und kreative Pop-up-Projekte, die den einzigartigen Geist der Stadt einfangen.
               <br/><br/>
