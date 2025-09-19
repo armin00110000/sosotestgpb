@@ -40,7 +40,7 @@ export default function Navbar() {
       {/* Hamburger-Menü für Mobilgeräte */}
       <div className="md:hidden flex items-center z-50">
         <button onClick={toggleMenu} className="focus:outline-none">
-          <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg className="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}></path>
           </svg>
         </button>
@@ -71,7 +71,7 @@ export default function Navbar() {
 
       {/* Mobile Menü als Overlay */}
       <div className={`md:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-95 flex flex-col items-center justify-center transition-transform transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-        <button onClick={toggleMenu} className="absolute top-6 right-6 text-green-500 focus:outline-none">
+        <button onClick={toggleMenu} className="absolute top-6 right-6 text-teal-500 focus:outline-none">
           <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
@@ -80,7 +80,7 @@ export default function Navbar() {
           {navItems.map((item) => (
             <li key={item.name} onClick={() => setIsMenuOpen(false)}>
               <Link href={item.href}>
-                <span className="text-white text-3xl font-bold hover:text-green-500 transition-colors duration-300">
+                <span className="text-red-800 text-xl font-bold hover:text-teal-500 transition-colors duration-300">
                   {item.name}
                 </span>
               </Link>
