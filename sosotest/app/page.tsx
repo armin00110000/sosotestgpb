@@ -1,6 +1,3 @@
-// client-side-Komponente für den Navigations-hook
-"use client";
-
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
