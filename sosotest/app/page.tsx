@@ -2,9 +2,6 @@
 "use client";
 
 import Image from "next/image";
-//import Link from "next/link";
-//import { usePathname } from "next/navigation";
-// Importiere die Navbar-Komponente am Anfang jeder page.tsx Datei
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
  
@@ -34,15 +31,15 @@ export default function Home() {
 
           <div className="grid grid-cols-3 gap-8 w-full mt-6">
             <div className="flex flex-col items-center">
-              <Image src="/img/brandenburger.jpg" alt="Brandenburger Tor" width={300} height={200} className="rounded-lg shadow-[8px_8px_0px_rgba(255,0,0,0.6)]" />
+              <Image src="/img/brandenburger.jpg" alt="Brandenburger Tor" width={300} height={200} className="rounded-lg shadow-[8px_8px_0px_theme(colors.red.600)]" />
               <p className="mt-2 text-center text-white text-sm font-bold">Brandenburger Tor</p>
             </div>
             <div className="flex flex-col items-center">
-              <Image src="/img/techpark_berlin.jpeg" alt="Adlershof Technikpark" width={300} height={200} className="rounded-lg shadow-[8px_8px_0px_rgba(255,0,0,0.6)]" />
+              <Image src="/img/techpark_berlin.jpeg" alt="Adlershof Technikpark" width={300} height={200} className="rounded-lg shadow-[8px_8px_0px_theme(colors.red.600)]" />
               <p className="mt-2 text-center text-white text-sm font-bold">Adlershof Technikpark</p>
             </div>
             <div className="flex flex-col items-center">
-              <Image src="/img/weltzeituhr.jpg" alt="alexander platz" width={300} height={200} className="rounded-lg shadow-[8px_8px_0px_rgba(255,0,0,0.6)]" />
+              <Image src="/img/weltzeituhr.jpg" alt="alexander platz" width={300} height={200} className="rounded-lg shadow-[8px_8px_0px_theme(colors.red.600)]" />
               <p className="mt-2 text-center text-white text-sm font-bold">Weltzeituhr & Fernsehturm</p>
             </div>
           </div>
