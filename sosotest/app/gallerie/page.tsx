@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { useState } from "react"; // useState für die Zustandsverwaltung
 import Navbar from "../components/Navbar";
