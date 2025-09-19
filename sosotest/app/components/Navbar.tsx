@@ -26,15 +26,16 @@ export default function Navbar() {
     <nav className="w-full bg-gray-900 p-6 flex justify-center items-center border-b border-teal-500 z-50 fixed top-0 left-0">
 
 {/* Logo auf der linken Seite */}
-  <div className="absolute top-0 left-6">
-<Image
-            src="/img/logo_t.png"
-            alt="Logo"
-            width={160} 
-            height={160} 
-            className="rounded-full"
-          />    
-  </div>
+<div className="absolute top-0 left-6">
+  <Image
+    src="/img/logo_t.png"
+    alt="Logo"
+    width={160}
+    height={160}
+    className="rounded-full w-20 h-20 md:w-40 md:h-40" // Mobile-First-Ansatz
+  />
+</div>
+
 
       {/* Hamburger-Menü für Mobilgeräte */}
       <div className="md:hidden flex items-center z-50">
